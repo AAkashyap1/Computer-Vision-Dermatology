@@ -12,3 +12,4 @@ iOS application designed to assist in the classification of skin conditions usin
 - Display confidence levels for each prediction.
 - Provide additional insight if multiple images are classified as the same condition.
 
+Additional updates coming soon for this application.
