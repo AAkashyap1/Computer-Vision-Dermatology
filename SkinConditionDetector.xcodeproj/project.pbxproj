@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82C87CF2C180B5000FBDEF5 /* SkinConditionDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C87CE2C180B5000FBDEF5 /* SkinConditionDetectorApp.swift */; };
+		F82C87D12C180B5000FBDEF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C87D02C180B5000FBDEF5 /* ContentView.swift */; };
+		F82C87D32C180B5100FBDEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82C87D22C180B5100FBDEF5 /* Assets.xcassets */; };
+		F82C87D62C180B5100FBDEF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82C87D52C180B5100FBDEF5 /* Preview Assets.xcassets */; };
+		F82C87E02C180B5100FBDEF5 /* SkinConditionDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C87DF2C180B5100FBDEF5 /* SkinConditionDetectorTests.swift */; };
+		F82C87EA2C180B5100FBDEF5 /* SkinConditionDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C87E92C180B5100FBDEF5 /* SkinConditionDetectorUITests.swift */; };
+		F82C87EC2C180B5100FBDEF5 /* SkinConditionDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C87EB2C180B5100FBDEF5 /* SkinConditionDetectorUITestsLaunchTests.swift */; };
+		F8A4D6F12C1968A30015EE62 /* final_skin_condition_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F8A4D6F02C1968A30015EE62 /* final_skin_condition_model.mlpackage */; };
+		F8A4D6F32C197A4B0015EE62 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4D6F22C197A4B0015EE62 /* CameraView.swift */; };
+		F8A4D6F92C197BCA0015EE62 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4D6F82C197BCA0015EE62 /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82C87DC2C180B5100FBDEF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82C87C32C180B5000FBDEF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82C87CA2C180B5000FBDEF5;
+			remoteInfo = SkinConditionDetector;
+		};
+		F82C87E62C180B5100FBDEF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82C87C32C180B5000FBDEF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82C87CA2C180B5000FBDEF5;
+			remoteInfo = SkinConditionDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F82C87CB2C180B5000FBDEF5 /* SkinConditionDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinConditionDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82C87CE2C180B5000FBDEF5 /* SkinConditionDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionDetectorApp.swift; sourceTree = "<group>"; };
+		F82C87D02C180B5000FBDEF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F82C87D22C180B5100FBDEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82C87D52C180B5100FBDEF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F82C87DB2C180B5100FBDEF5 /* SkinConditionDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkinConditionDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82C87DF2C180B5100FBDEF5 /* SkinConditionDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionDetectorTests.swift; sourceTree = "<group>"; };
+		F82C87E52C180B5100FBDEF5 /* SkinConditionDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkinConditionDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82C87E92C180B5100FBDEF5 /* SkinConditionDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionDetectorUITests.swift; sourceTree = "<group>"; };
+		F82C87EB2C180B5100FBDEF5 /* SkinConditionDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8A4D6F02C1968A30015EE62 /* final_skin_condition_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = final_skin_condition_model.mlpackage; sourceTree = "<group>"; };
+		F8A4D6F22C197A4B0015EE62 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F8A4D6F82C197BCA0015EE62 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82C87C82C180B5000FBDEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87D82C180B5100FBDEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87E22C180B5100FBDEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82C87C22C180B5000FBDEF5 = {
+			isa = PBXGroup;
+			children = (
+				F82C87CD2C180B5000FBDEF5 /* SkinConditionDetector */,
+				F82C87DE2C180B5100FBDEF5 /* SkinConditionDetectorTests */,
+				F82C87E82C180B5100FBDEF5 /* SkinConditionDetectorUITests */,
+				F82C87CC2C180B5000FBDEF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F82C87CC2C180B5000FBDEF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82C87CB2C180B5000FBDEF5 /* SkinConditionDetector.app */,
+				F82C87DB2C180B5100FBDEF5 /* SkinConditionDetectorTests.xctest */,
+				F82C87E52C180B5100FBDEF5 /* SkinConditionDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82C87CD2C180B5000FBDEF5 /* SkinConditionDetector */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4D6F02C1968A30015EE62 /* final_skin_condition_model.mlpackage */,
+				F82C87CE2C180B5000FBDEF5 /* SkinConditionDetectorApp.swift */,
+				F82C87D02C180B5000FBDEF5 /* ContentView.swift */,
+				F8A4D6F22C197A4B0015EE62 /* CameraView.swift */,
+				F8A4D6F82C197BCA0015EE62 /* ImagePicker.swift */,
+				F82C87D22C180B5100FBDEF5 /* Assets.xcassets */,
+				F82C87D42C180B5100FBDEF5 /* Preview Content */,
+			);
+			path = SkinConditionDetector;
+			sourceTree = "<group>";
+		};
+		F82C87D42C180B5100FBDEF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F82C87D52C180B5100FBDEF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F82C87DE2C180B5100FBDEF5 /* SkinConditionDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F82C87DF2C180B5100FBDEF5 /* SkinConditionDetectorTests.swift */,
+			);
+			path = SkinConditionDetectorTests;
+			sourceTree = "<group>";
+		};
+		F82C87E82C180B5100FBDEF5 /* SkinConditionDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F82C87E92C180B5100FBDEF5 /* SkinConditionDetectorUITests.swift */,
+				F82C87EB2C180B5100FBDEF5 /* SkinConditionDetectorUITestsLaunchTests.swift */,
+			);
+			path = SkinConditionDetectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82C87CA2C180B5000FBDEF5 /* SkinConditionDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82C87EF2C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetector" */;
+			buildPhases = (
+				F82C87C72C180B5000FBDEF5 /* Sources */,
+				F82C87C82C180B5000FBDEF5 /* Frameworks */,
+				F82C87C92C180B5000FBDEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkinConditionDetector;
+			productName = SkinConditionDetector;
+			productReference = F82C87CB2C180B5000FBDEF5 /* SkinConditionDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F82C87DA2C180B5100FBDEF5 /* SkinConditionDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82C87F22C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetectorTests" */;
+			buildPhases = (
+				F82C87D72C180B5100FBDEF5 /* Sources */,
+				F82C87D82C180B5100FBDEF5 /* Frameworks */,
+				F82C87D92C180B5100FBDEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82C87DD2C180B5100FBDEF5 /* PBXTargetDependency */,
+			);
+			name = SkinConditionDetectorTests;
+			productName = SkinConditionDetectorTests;
+			productReference = F82C87DB2C180B5100FBDEF5 /* SkinConditionDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F82C87E42C180B5100FBDEF5 /* SkinConditionDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82C87F52C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetectorUITests" */;
+			buildPhases = (
+				F82C87E12C180B5100FBDEF5 /* Sources */,
+				F82C87E22C180B5100FBDEF5 /* Frameworks */,
+				F82C87E32C180B5100FBDEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82C87E72C180B5100FBDEF5 /* PBXTargetDependency */,
+			);
+			name = SkinConditionDetectorUITests;
+			productName = SkinConditionDetectorUITests;
+			productReference = F82C87E52C180B5100FBDEF5 /* SkinConditionDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82C87C32C180B5000FBDEF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F82C87CA2C180B5000FBDEF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F82C87DA2C180B5100FBDEF5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F82C87CA2C180B5000FBDEF5;
+					};
+					F82C87E42C180B5100FBDEF5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F82C87CA2C180B5000FBDEF5;
+					};
+				};
+			};
+			buildConfigurationList = F82C87C62C180B5000FBDEF5 /* Build configuration list for PBXProject "SkinConditionDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82C87C22C180B5000FBDEF5;
+			productRefGroup = F82C87CC2C180B5000FBDEF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82C87CA2C180B5000FBDEF5 /* SkinConditionDetector */,
+				F82C87DA2C180B5100FBDEF5 /* SkinConditionDetectorTests */,
+				F82C87E42C180B5100FBDEF5 /* SkinConditionDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82C87C92C180B5000FBDEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82C87D62C180B5100FBDEF5 /* Preview Assets.xcassets in Resources */,
+				F82C87D32C180B5100FBDEF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87D92C180B5100FBDEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87E32C180B5100FBDEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82C87C72C180B5000FBDEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82C87D12C180B5000FBDEF5 /* ContentView.swift in Sources */,
+				F8A4D6F12C1968A30015EE62 /* final_skin_condition_model.mlpackage in Sources */,
+				F8A4D6F92C197BCA0015EE62 /* ImagePicker.swift in Sources */,
+				F8A4D6F32C197A4B0015EE62 /* CameraView.swift in Sources */,
+				F82C87CF2C180B5000FBDEF5 /* SkinConditionDetectorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87D72C180B5100FBDEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82C87E02C180B5100FBDEF5 /* SkinConditionDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C87E12C180B5100FBDEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82C87EA2C180B5100FBDEF5 /* SkinConditionDetectorUITests.swift in Sources */,
+				F82C87EC2C180B5100FBDEF5 /* SkinConditionDetectorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82C87DD2C180B5100FBDEF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82C87CA2C180B5000FBDEF5 /* SkinConditionDetector */;
+			targetProxy = F82C87DC2C180B5100FBDEF5 /* PBXContainerItemProxy */;
+		};
+		F82C87E72C180B5100FBDEF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82C87CA2C180B5000FBDEF5 /* SkinConditionDetector */;
+			targetProxy = F82C87E62C180B5100FBDEF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F82C87ED2C180B5100FBDEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F82C87EE2C180B5100FBDEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F82C87F02C180B5100FBDEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkinConditionDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = 267LG69867;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F82C87F12C180B5100FBDEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkinConditionDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = 267LG69867;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F82C87F32C180B5100FBDEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 267LG69867;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkinConditionDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkinConditionDetector";
+			};
+			name = Debug;
+		};
+		F82C87F42C180B5100FBDEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 267LG69867;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkinConditionDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkinConditionDetector";
+			};
+			name = Release;
+		};
+		F82C87F62C180B5100FBDEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 267LG69867;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkinConditionDetector;
+			};
+			name = Debug;
+		};
+		F82C87F72C180B5100FBDEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 267LG69867;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ananth-Kashyap.SkinConditionDetectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkinConditionDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82C87C62C180B5000FBDEF5 /* Build configuration list for PBXProject "SkinConditionDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82C87ED2C180B5100FBDEF5 /* Debug */,
+				F82C87EE2C180B5100FBDEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82C87EF2C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82C87F02C180B5100FBDEF5 /* Debug */,
+				F82C87F12C180B5100FBDEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82C87F22C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82C87F32C180B5100FBDEF5 /* Debug */,
+				F82C87F42C180B5100FBDEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82C87F52C180B5100FBDEF5 /* Build configuration list for PBXNativeTarget "SkinConditionDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82C87F62C180B5100FBDEF5 /* Debug */,
+				F82C87F72C180B5100FBDEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82C87C32C180B5000FBDEF5 /* Project object */;
+}
