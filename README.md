@@ -1,6 +1,6 @@
 # An Intelligent System for Automated Skin Condition Classification
 
-## Introduction
+## Overview
 
 iOS application designed to assist in the classification of skin conditions using deep learning and computer vision. Provides quick and accurate identification of various dermatological conditions from user-uploaded images or photos taken directly within the app.
 
