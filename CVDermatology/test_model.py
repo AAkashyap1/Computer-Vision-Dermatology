@@ -31,7 +31,6 @@ classes = [
     "Warts, Mollescum, or other Viral Infection"
 ]
 
-
 def predict_image(image_path):
     # Load and transform the image
     image = Image.open(image_path).convert('RGB')
