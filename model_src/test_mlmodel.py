@@ -23,8 +23,6 @@ classes = [
 model = ct.models.MLModel('final_skin_condition_model.mlmodel')
 
 # Define the image transformation pipeline
-
-
 def preprocess_image(image_path):
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
