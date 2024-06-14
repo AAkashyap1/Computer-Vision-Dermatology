@@ -4,8 +4,6 @@ from torchvision import models
 import torch.nn as nn
 
 # Define the PyTorch model class
-
-
 class EfficientNetB2Model(nn.Module):
     def __init__(self, num_classes):
         super(EfficientNetB2Model, self).__init__()
