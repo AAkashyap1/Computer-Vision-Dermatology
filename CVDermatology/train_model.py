@@ -26,8 +26,6 @@ label_mapping = {
 }
 
 # Dataset class
-
-
 class SkinConditionDataset(Dataset):
     def __init__(self, csv_file, label_mapping, transform=None):
         self.annotations = pd.read_csv(csv_file)
@@ -49,19 +47,21 @@ class SkinConditionDataset(Dataset):
 
 # Data transformation and augmentation
 train_transform = transforms.Compose([
+    transforms.RandomResizedCrop(224, scale=(0.8, 1.0)),
+    transforms.RandomHorizontalFlip(),
+    transforms.RandomVerticalFlip(),
+    transforms.RandomRotation(20),
+    transforms.ColorJitter(brightness=0.2, contrast=0.2,
+                            saturation=0.2, hue=0.2),
+    transforms.RandomAffine(degrees=0, shear=10)
+])
+
+"""
+train_transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
-
-"""
-transforms.RandomResizedCrop(224, scale=(0.8, 1.0)),
-transforms.RandomHorizontalFlip(),
-transforms.RandomVerticalFlip(),
-transforms.RandomRotation(20),
-transforms.ColorJitter(brightness=0.2, contrast=0.2,
-                        saturation=0.2, hue=0.2),
-transforms.RandomAffine(degrees=0, shear=10),
 """
 
 test_transform = transforms.Compose([
@@ -71,8 +71,6 @@ test_transform = transforms.Compose([
 ])
 
 # EfficientNet-B2 Model
-
-
 class EfficientNetB2Model(nn.Module):
     def __init__(self, num_classes):
         super(EfficientNetB2Model, self).__init__()
@@ -85,8 +83,6 @@ class EfficientNetB2Model(nn.Module):
         return self.model(x)
 
 # Training function
-
-
 def train_model(model, dataloader, criterion, optimizer, device, num_epochs=25):
     model.to(device)
     for epoch in range(num_epochs):
@@ -105,8 +101,6 @@ def train_model(model, dataloader, criterion, optimizer, device, num_epochs=25):
         print(f'Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}')
 
 # Evaluation function
-
-
 def evaluate_model(model, dataloader, device):
     model.eval()
     all_preds = []
@@ -126,8 +120,6 @@ def evaluate_model(model, dataloader, device):
         f'Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1-score: {f1:.4f}')
 
 # Save the model
-
-
 def save_model(model, model_path):
     model.eval()
     example_input = torch.rand(1, 3, 224, 224).to(
@@ -138,8 +130,6 @@ def save_model(model, model_path):
     print(f'Model saved to {model_path}')
 
 # Main script to initialize and start training
-
-
 def main():
     # Constants
     # Replace with your actual CSV file path
